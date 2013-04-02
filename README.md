@@ -12,7 +12,7 @@ If you're not familiar with a Visual Studio project, please focus on the *.cs fi
  and the test ImageLibrary.Specs\
  - ImageSpecs.cs
 
-I used C# because it is the stack that I am most familar with and have used day to day. I'm most confident with the testing tools which I used to drive out the code - although I already had some idea of an overall design in my head.
+I used C# because it is the stack that I am most familiar with and have used day to day. I'm most confident with the testing tools which I used to drive out the code - although I already had some idea of an overall design in my head.
 I used Machine.Specifications (which was inspired by Ruby's RSpec) and FluentAssertations for testing. Again, because I'm familar with them, but I also (mostly) like the syntax. I find it to be more readable and helps document the code.
 
 Not implemented: 
@@ -22,13 +22,13 @@ Room for improvement:
  - float pixels versus int pixels: the Value property should be in the interface
  - use of enums with switch statements can be a code smell (sometimes): future extension will require more significant refactoring as compared to a better implementation
  - overall style and cleanup of code
- - inline documentation and comments, but I always try to have self documenting code
+ - inline documentation and comments, but I always try to have self-documenting code
 
 JavaScript View Camera Images
 ----
 
 I thought this would be the more difficult of the two, for me, so I started on it first.
-Unfortunatly, I got mired in Backbone, which I thought I knew beter than it seems I do.
+Unfortunately, I got mired in Backbone, which I thought I knew better than it seems I do.
 
 How I intended the code to work:
 
@@ -44,3 +44,7 @@ An image is a model that has a reference to the id (and source of a thumbnail) o
 Optionally, the entire list of images wouldn't have to be in the collection that backbone gets from the server, but it should be fine - it's only 1008 entries as described by the problem.
 
 Changing cameras would be a dropdown, or just a list of links.
+
+Overall
+---
+Overall, my biggest issue was the time limit. For myself, I think this is totally achievable if I were to use another 1 or maybe 2 hours.
