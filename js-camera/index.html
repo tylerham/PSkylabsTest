@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <title>View Camera Images</title>
+  <link rel="stylesheet" href="camera.css"/>
+</head>
+
+<body>
+
+  <div id="cameraapp">
+
+    <header>
+      <h1>Images</h1>
+    </header>
+
+    <navigation>
+      <ul id="camera-list"></ul>
+      <div id="camera-count"></ul>
+    </navigation>
+
+    <section id="main">
+      <div id="image"></div>
+    </section>
+
+    <footer>
+      <div id="image-count"></div>
+    </footer>
+
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js
+"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js
+"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js
+"></script>
+  <script src="camera.js"></script>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="image-template">
+    <div class="view">
+      <img src="<%- uri %>" />
+      <a class="previous"><%- previous %></a>
+      <a class="next"><%- next %></a>
+    </div>
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <% if (done) { %>
+      <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+
+  </body>
+</html>
